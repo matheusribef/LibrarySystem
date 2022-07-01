@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Silêncio por favor!</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                margin-left:30%;
+                margin-top:10%;
+                border-width:1px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="/resultado">
+            <input type="radio" name="criterio" value="colecao.id_colecao"> Coleção <br>
+            <input type="radio" name="criterio" value="livro.id_livro"> ID do Livro <br>
+            <input type="radio" name="criterio" value="livro.nm_livro"> Nome do Livro <br>
+            <input type="radio" name="criterio" value="livro.autor"> Autor <br>
+            <input type="radio" name="criterio" value="categoria.categoria"> Gênero <br>
+            <bold>Digite aqui o que deseja procurar : </bold><input type="text" name="valor">
+            <input type="submit" value="Procurar">
+        </form>
+    </body>
+</html>
